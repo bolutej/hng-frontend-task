@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.profile-section {
+  text-align: center;
+  padding-bottom: 10rem;
+  
+}
+#profile__img {
+  width: 10rem;
+  border-radius: 10px;
+}
