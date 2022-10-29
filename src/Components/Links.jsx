@@ -1,5 +1,10 @@
 import React from 'react'
 import Image from '../Image/bolu.png';
+import Ifg from '../Image/ifg.png';
+import Zuri from '../Image/Zuri.png';
+import {BsSlack} from 'react-icons/bs';
+import {BsGithub} from 'react-icons/bs';
+
 const Links = () => {
     const links = [
         {
@@ -35,17 +40,30 @@ const Links = () => {
       ];
   return (
     <div>
-        <div className="profile-section">
-        <img id="profile__img"src={Image} alt="" />
+      <div className="profile-section">
+        <img id="profile__img" src={Image} alt="" />
         <h3 id="slack">Boluwatife Tejumola</h3>
       </div>
       <div className="main-links">
         {links.map(({ id, title, link }) => {
-          return <button key={id} className="each"><a href={link}>{title}</a></button>;
+          return (
+            <button key={id} className="each">
+              <a href={link}>{title}</a>
+            </button>
+          );
         })}
+        <div className="socials">
+          <BsSlack className="icons" />
+          <BsGithub className="icons" />
+        </div>
+      </div>
+      <div className="footer">
+        <img src={Ifg} alt="" />
+        <p>HNG Internship 9 Frontend Task</p>
+        <img src={Zuri} alt="" />
       </div>
     </div>
-  )
+  );
 }
 
 export default Links
