@@ -12,3 +12,23 @@
   width: 10rem;
   border-radius: 10px;
 }
+.main-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 45px;
+  
+}
+.each {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 7px;
+}
+.each a {
+  text-decoration: none;
+  color: black;
+}
+.each a:hover {
+  color: blue;
+}
