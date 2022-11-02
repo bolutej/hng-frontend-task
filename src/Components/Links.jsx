@@ -7,11 +7,7 @@ import {BsGithub} from 'react-icons/bs';
 
 const Links = () => {
     const links = [
-        {
-          id: 'twitter',
-          title: 'Twitter Link',
-          link: 'https://twitter.com/BoluTejumola'
-        },
+       
         {
           id: 'btn__zuri',
           title: 'Zuri Team',
@@ -42,7 +38,8 @@ const Links = () => {
     <div>
       <div className="profile-section">
         <img id="profile__img" src={Image} alt="" />
-        <h3 id="slack">Boluwatife Tejumola</h3>
+        <h3 id='twitter'>BoluTejumola</h3>
+        <h3 id="slack">I couldn't get in the slack channel because the link wasn't going through</h3>
       </div>
       <div className="main-links">
         {links.map(({ id, title, link }) => {
