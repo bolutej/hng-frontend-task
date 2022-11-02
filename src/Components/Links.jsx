@@ -25,7 +25,7 @@ const Links = () => {
         {
           id: 'book__python',
           title: 'Python Books',
-          link: 'https://books.zuri.team',
+          link: 'https://books.zuri.team/python-for-beginners?ref_id=Bolu',
         },
         {
           id: 'pitch',
@@ -48,19 +48,19 @@ const Links = () => {
         {links.map(({ id, title, link }) => {
           return (
             <button key={id} className="each">
-              <a href={link}>{title}</a>
+              <a href={link} target="_blank" rel="noreferrer">{title}</a>
             </button>
           );
         })}
         <div className="socials">
           <BsSlack className="icons" />
-          <BsGithub className="icons" />
+          <a href="https://github.com/bolutej" target="_blank" rel="noreferrer"><BsGithub className="icons" /></a>
         </div>
       </div>
       <div className="footer">
-        <img src={Ifg} alt="" />
+        <img src={Ifg} alt="" className='image'/>
         <p>HNG Internship 9 Frontend Task</p>
-        <img src={Zuri} alt="" />
+        <img src={Zuri} alt="" className='image'/>
       </div>
     </div>
   );

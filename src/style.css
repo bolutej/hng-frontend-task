@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .profile-section {
   text-align: center;
-  padding-bottom: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   
 }
 #profile__img {
   width: 10rem;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 .main-links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 45px;
+  padding: 0px 20px;
   
 }
 .each {
@@ -35,17 +37,43 @@
 .socials {
   text-align: center;
   padding-top: 20px;
-  
-
+  padding-bottom: 0px;
 }
 .icons {
   margin-left: 30px;
   font-size: 1.2rem;
+  color: black;
+}
+.icons:hover {
+  color:purple
+}
+.footer p {
+  color: rgb(140, 142, 143);
+}
+.image {
+  padding: 9px 0px;
 }
 .footer {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px 0px 20px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-links {
+    padding: 0px 70px;
+  }
+  .footer {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 60px;
   padding-bottom: 20px;
+}
+.each{
+  font-size: bold;
+}
 }
